@@ -1,44 +1,27 @@
 {
-  "name": "5-building-forms-lab",
+  "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "babel": {
-    "presets": [
-      "airbnb",
-      "env",
-      "stage-0",
-      "react"
-    ]
-  },
-  "devDependencies": {
-    "jsdom": "^9.9.1",
-    "mocha": "^5.2.0",
-    "react-scripts": "1.1.4",
-    "webpack": "^3.9.0",
-    "webpack-dev-server": "^2.9.0"
-  },
   "dependencies": {
-    "babel-core": "^6.22.1",
-    "babel-preset-airbnb": "^2.5.2",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.22.0",
-    "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "expect": "^1.20.2",
-    "mocha-multi": "^1.0.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "sinon": "^6.1.4"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha -w test/helpers/browser.js test/*.js",
-    "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
-    "test:watch": "npm run test -- --watch",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
-  }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
